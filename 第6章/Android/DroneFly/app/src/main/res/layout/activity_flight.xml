@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="飞行状态信息获取" />
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="当前模式: N/A"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="经度: N/A 纬度: N/A 高度: N/A"/>
+
+        <TextView
+            android:id="@+id/tv_velocity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="速度: N/A"/>
+
+        <TextView
+            android:id="@+id/tv_satellite_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="连接卫星数量: N/A"/>
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="飞行控制" />
+
+        <Button
+            android:id="@+id/btn_takeoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="起飞"/>
+
+        <Button
+            android:id="@+id/btn_takeoff_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="取消起飞"/>
+
+        <Button
+            android:id="@+id/btn_landing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="降落"/>
+
+        <Button
+            android:id="@+id/btn_landing_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="取消降落"/>
+
+        <Button
+            android:id="@+id/btn_set_gohome_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置返航高度"/>
+
+        <Button
+            android:id="@+id/btn_get_gohome_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取返航高度"/>
+
+        <Button
+            android:id="@+id/btn_gohome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返航"/>
+
+        <Button
+            android:id="@+id/btn_gohome_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:text="取消返航"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态信息" />
+
+        <TextView
+            android:id="@+id/tv_status_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="时间线任务状态" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="任务执行" />
+
+        <Button
+            android:id="@+id/btn_load_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载任务" />
+
+        <Button
+            android:id="@+id/btn_start_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始任务"/>
+
+        <Button
+            android:id="@+id/btn_pause_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂停任务"/>
+
+        <Button
+            android:id="@+id/btn_resume_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="继续任务" />
+
+        <Button
+            android:id="@+id/btn_stop_timeline_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止任务" />
+
+    </LinearLayout>
+
+</ScrollView>

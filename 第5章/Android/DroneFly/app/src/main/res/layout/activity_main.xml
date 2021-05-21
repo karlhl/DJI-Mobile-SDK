@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用程序激活与无人机绑定" />
+
+        <TextView
+            android:id="@+id/tv_status_appactivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="当前应用程序激活状态:UNKNOWN"/>
+
+        <TextView
+            android:id="@+id/tv_status_aircraftbinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="当前无人机绑定状态:UNKNOWN"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆DJI账号" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出DJI账号"/>
+
+        <Button
+            android:id="@+id/btn_status_appactivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取应用程序激活状态" />
+
+        <Button
+            android:id="@+id/btn_status_aircraftbinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取无人机绑定状态"/>
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="无人机功能测试" />
+
+        <Button
+            android:id="@+id/btn_flight_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="飞行控制器" />
+
+        <Button
+            android:id="@+id/btn_keyed_flight_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="飞行控制器(键值管理器)" />
+
+        <Button
+            android:id="@+id/btn_map_gaode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在地图中显示无人机位置(高德地图)" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="在地图中显示无人机位置(OpenLayers)" />
+
+        <Button
+            android:id="@+id/btn_camera_gimbal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="相机与云台" />
+
+        <Button
+            android:id="@+id/btn_media_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="访问相机存储(MediaDownload)" />
+
+        <Button
+            android:id="@+id/btn_playback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="访问相机存储(Playback)" />
+
+        <Button
+            android:id="@+id/btn_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="航点任务" />
+
+    </LinearLayout>
+
+</ScrollView>

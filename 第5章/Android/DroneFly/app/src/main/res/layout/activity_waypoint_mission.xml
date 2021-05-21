@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态信息" />
+
+        <TextView
+            android:id="@+id/tv_status_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="航点任务状态" />
+
+        <TextView
+            android:id="@+id/tv_status_waypoint_mission_execute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="航点任务执行状态" />
+
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="任务执行" />
+
+        <Button
+            android:id="@+id/btn_load_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加载任务" />
+
+        <Button
+            android:id="@+id/btn_upload_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上传任务"/>
+
+        <Button
+            android:id="@+id/btn_start_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始任务"/>
+
+        <Button
+            android:id="@+id/btn_pause_waypoint_mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂停任务"/>
+
+    </LinearLayout>
+
+</ScrollView>

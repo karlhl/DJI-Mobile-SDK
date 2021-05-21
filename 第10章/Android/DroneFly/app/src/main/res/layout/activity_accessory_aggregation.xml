@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态信息" />
+
+        <TextView
+            android:id="@+id/tv_connection_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="连接状态: 未连接附件"/>
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="喊话器" />
+
+        <Button
+            android:id="@+id/btn_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始录音"/>
+
+        <Button
+            android:id="@+id/btn_stop_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止播放"/>
+
+        <Button
+            android:id="@+id/btn_change_play_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="切换播放模式"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="喊话器音量:"/>
+
+        <SeekBar
+            android:id="@+id/sb_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="100"
+            android:padding="8dp" />
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="夜航灯" />
+
+        <Button
+            android:id="@+id/btn_enable_beacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开/关闭"/>
+
+        <TextView
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="探照灯" />
+
+        <Button
+            android:id="@+id/btn_enable_spotlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开/关闭"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="探照灯亮度:"/>
+
+        <SeekBar
+            android:id="@+id/sb_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="100"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
